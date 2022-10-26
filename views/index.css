@@ -1,0 +1,46 @@
+table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    text-align: center;
+    height: 50px;
+    vertical-align: bottom;
+  }
+.main{
+    display: flex;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+.left{
+  width: 20%;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.right{
+width: 20%;
+height: 500px;
+border: 1px solid black;
+text-align: center;
+}
+.button_operate{    
+  padding-top: 50%;
+  padding-left: 40%;
+}
+
+.button_form{
+  margin-top: 200px;
+}
+.Data_form{
+  margin-top: 10px;
+}
+

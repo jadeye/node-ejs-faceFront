@@ -4,14 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div class="main">
-      <h1>Hello World</h1>
-      <h2><%= text %></h2>
-      <a href="/about">About Page</a>
-      <img src="img/cyberAvtam.png" alt="cyberAvtam" />
+      <div class="right">
+      <h1>Form Script</h1>
+      <h4>Entering script data</h4>
+      <form  class="main_form" name="my_form" onsubmit="validateForm(event);return false">
+        <input type="file"id="avatar" name="avatar"accept="image/png, image/jpeg"><br>
+        <label for="lname" class="Data_form">Python version number:</label><br>
+        <input type="text" id="lname" name="lname" class="Data_form"><br>
+        <input type="submit" value="edit" class="button_form">
+      </form>
+      </div>
+      <div class="left">
+        <div class="button_operate">
+          <button>operate</button>
+        </div>
+        <div class="main_Table">
+          <table>
+            <tr>
+             <th>First name</th>
+             <th>Last Name</th>
+             <th>time</th>
+            </tr>
+            <tr>
+              <td>yoni</td>
+              <td>machrabi</td>
+              <td>12:50</td>
+            </tr>
+            <tr>
+              <td>matan</td>
+              <td>matan</td>
+              <td>12:51</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
