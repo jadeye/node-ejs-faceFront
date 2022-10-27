@@ -1,16 +1,51 @@
 body {
-  /* background-color: #5a8080; */
   background-color: #fff;
   width: 50%;
   margin: auto;
 }
 .main {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .main img {
   width: 50%;
+}
+.column {
+  flex: 33.33%;
+  align-items: center;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  height: 50px;
+  vertical-align: bottom;
+}
+.button_operate {
+  padding-top: 50%;
+  padding-left: 40%;
+}
+
+.button-form {
+  margin-top: 200px;
+}
+.data-form {
+  margin-top: 10px;
+}
+
+@media (min-width: 48em) {
+  .columns {
+    flex-wrap: nowrap;
+  }
 }

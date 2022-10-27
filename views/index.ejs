@@ -1,17 +1,60 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <%- include('./partials/head'); %>
   </head>
-  <body>
+  <body class="container">
+    <header><%- include('./partials/header'); %></header>
     <div class="main">
-      <h1>Hello World</h1>
-      <h2><%= text %></h2>
-      <a href="/about">About Page</a>
-      <img src="img/cyberAvtam.png" alt="cyberAvtam" />
+      <div class="column">
+        <h1>Script Params</h1>
+        <form
+          class="main_form"
+          name="my_form"
+          onsubmit="validateForm(event);return false"
+        >
+          <input
+            type="file"
+            id="avatar"
+            name="avatar"
+            accept="application/json,.py"
+          /><br />
+          <label for="lname" class="Data_form">Python version number:</label
+          ><br />
+          <input type="text" id="lname" name="lname" class="data-form" /><br />
+          <input type="submit" value="edit" class="button-form" />
+        </form>
+        <h4>* Script should have its' parameters here</h4>
+      </div>
+      <div class="column">
+        <h1>Hello Avtam Cyber World</h1>
+        <h2></h2>
+        <img src="img/cyberAvtam.png" alt="cyberAvtam" />
+      </div>
+      <div class="column">
+        <div class="button_operate">
+          <button onclick="">Launch Camera</button>
+        </div>
+        <div class="main_Table">
+          <table>
+            <tr>
+              <th>First name</th>
+              <th>Last Name</th>
+              <th>time</th>
+            </tr>
+            <tr>
+              <td>yoni</td>
+              <td>machrabi</td>
+              <td>12:50</td>
+            </tr>
+            <tr>
+              <td>matan</td>
+              <td>matan</td>
+              <td>12:51</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
   </body>
-</html> -->
+</html>
